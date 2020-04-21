@@ -15,8 +15,6 @@ export class NewsService {
         params: new HttpParams().set('section', 'world'),
     }
 
-    news: News;
-
     constructor(
         @Inject('THE_GUARDIAN_API_KEY') private API_KEY,
         private http: HttpClient
